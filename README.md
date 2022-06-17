@@ -1,4 +1,4 @@
-<h1>**Canteen E-Queue System**<h1>
+<h1>**Canteen E-Queue System**</h1>
 
 **Important Links:**
 
