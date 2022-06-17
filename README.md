@@ -32,7 +32,6 @@ Among the 3 applications, Server App MUST be lunched first. Upon lunching Server
 You need to remember the local IP address shown to you by the ServerApp, because Announcer app and the multiple client apps will ask for the IP address of the server.
 
  
- 
 Server App:
 
 You can switch between the two views with the buttons "FULL MENU" and "ORDER LIST" in the upper left of the screen which shows the list of items in the menu and the list of orders from clients, respectively. Each view also comes with their own functionalities (buttons)
@@ -46,7 +45,6 @@ In the "FULL MENU" view, you will have filter buttons in the lower left to show 
 In the "ORDER LIST" view, you will have filter buttons in the lower left to filter orders in the list according to their status. At the bottom of the view, you have options to refresh the list of orders, change the status of an order to processing, serving or completed by entering order numbers. You can also see full details of the order by clicking them directly. It opens the "Order Details Dialog", which has a button to proceed the status of your order.
 
  
- 
 Client App:
 
 In the Client App, the main content of the GUI is the updated menu constantly fetched from the server. On the upper left part of the GUI, it has the buttons to filter the menu according to categories. It also has a simple instruction of use on the lower left.
