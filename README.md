@@ -1,8 +1,11 @@
 Important Links:
 
 Runnable exe: https://drive.google.com/file/d/1YC9roUIw5kkvdhs7pG8cuvzElt1dAkk6/view?usp=sharing
+
 Video demonstration: https://youtu.be/tK2E5WxZY3c
+
 GitHub project link: https://github.com/ter-bino/E-Queue-System
+
 
 Details:
 
@@ -13,7 +16,9 @@ Inspired by self-service kiosks in fast food restaurants.
 The system consists of three applications:
 
 Server App
+
 Client App
+
 Announcer App
 
  
@@ -79,9 +84,9 @@ AnnouncerApp: Should be ran in a big screen, easily visible for customers. Shows
 Things to Note:
 
 Instances:
-- Only 1 server app should run or be used.
-- Only 1 announcer app can connect to the server.
-- Multiple client apps can connect to the server.
+- Only 1 server app should run or be used.<br>
+- Only 1 announcer app can connect to the server.<br>
+- Multiple client apps can connect to the server.<br>
 
 Note that files "menu.obj" and "item.dat" are important files that should be kept together in the same folder with "ServerApp.exe". Those files keep the menu, and tracks the last ItemIDs assigned to newly added items.
 
