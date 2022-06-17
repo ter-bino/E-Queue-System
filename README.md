@@ -1,6 +1,6 @@
-#Canteen E-Queue System
+<h1>**Canteen E-Queue System**<h1>
 
-Important Links:
+**Important Links:**
 
 Runnable exe: https://drive.google.com/file/d/1YC9roUIw5kkvdhs7pG8cuvzElt1dAkk6/view?usp=sharing
 
@@ -9,7 +9,7 @@ Video demonstration: https://youtu.be/tK2E5WxZY3c
 GitHub project link: https://github.com/ter-bino/E-Queue-System
 
 
-Details:
+**Details:**
 
 An interactive software system, to assist a small eatery like a canteen in queueing orders.
 
@@ -26,7 +26,7 @@ Announcer App
 ![image](https://user-images.githubusercontent.com/93169758/174222433-be8ec2c9-48c3-4788-877d-9864e970a931.png)
 
 
-Lunching the System:
+**Lunching the System:**
 
 Among the 3 applications, Server App MUST be lunched first. Upon lunching ServerApp, it will show you the Local IP address where it hosts the server. If no LAN connection is detected, then the server is opened on the localhost of the device.
 
@@ -38,7 +38,7 @@ You need to remember the local IP address shown to you by the ServerApp, because
 ![image](https://user-images.githubusercontent.com/93169758/174222479-088fe40e-ec61-423e-b257-017971abd0d4.png)
 
  
-Server App:
+**Server App:**
 
 You can switch between the two views with the buttons "FULL MENU" and "ORDER LIST" in the upper left of the screen which shows the list of items in the menu and the list of orders from clients, respectively. Each view also comes with their own functionalities (buttons)
 
@@ -54,7 +54,7 @@ In the "ORDER LIST" view, you will have filter buttons in the lower left to filt
 
 ![image](https://user-images.githubusercontent.com/93169758/174222541-4b4a7f32-78b0-42e6-b84c-5211a5ca3451.png)
 
-Client App:
+**Client App:**
 
 In the Client App, the main content of the GUI is the updated menu constantly fetched from the server. On the upper left part of the GUI, it has the buttons to filter the menu according to categories. It also has a simple instruction of use on the lower left.
 
@@ -74,13 +74,13 @@ Once the customer sends their order to the server, the server will send back the
 
 ![image](https://user-images.githubusercontent.com/93169758/174222654-52a5b3f3-ff87-47b8-b15e-1baa89009b86.png)
 
-Announcer App:
+**Announcer App:**
 
 There really is not much done in the Announcer App. This is just the application that should be displayed on a big screen to let customers know if their order's number is ready to be paid and claimed. Then, this app just waits for the server to send updates on the status of order numbers.
 
 ![image](https://user-images.githubusercontent.com/93169758/174222670-b87fc29f-87c7-4e90-9450-3cb3db4eb757.png)
 
-Summary of Program Use:
+**Summary of Program Use:**
 
 ServerApp: Should be used by the workers of the canteen, to know which orders should they prepare, and make this app send updates to order numbers in the announcer app. Workers should update the menu, update order statuses, and prepare the contents of orders receive from client apps.
 
@@ -88,7 +88,7 @@ ClientApp: Should be ran in the self-service devices around the canteen or eater
 
 AnnouncerApp: Should be ran in a big screen, easily visible for customers. Shows which orders are being processed and which orders are ready for claim and pay.
 
-Things to Note:
+**Things to Note:**
 
 Instances:
 - Only 1 server app should run or be used.<br>
