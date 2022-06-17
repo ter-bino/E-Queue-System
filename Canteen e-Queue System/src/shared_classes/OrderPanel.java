@@ -23,8 +23,10 @@ public class OrderPanel extends JPanel {
 	
 	private static final long serialVersionUID = 1L;
 	
-	//Font used in the whole GUI
-	static Font font = new Font("Verdana Pro Cond Black", Font.BOLD, 32);
+	/*
+	 * Font used in the whole panel
+	 */
+	static private Font font = new Font("Verdana Pro Cond Black", Font.BOLD, 32);
 	
 	//instance variables
 	private ImageIcon icon;
@@ -33,6 +35,7 @@ public class OrderPanel extends JPanel {
 
 	/**
 	 * Create the panel.
+	 * @param order - order object where the content of this panel is based from.
 	 */
 	public OrderPanel(Order order) {
 		

@@ -17,21 +17,26 @@ import javax.swing.border.LineBorder;
  * Each instance of this class is a panel
  * for a specific item in the displayed Menu
  * in the Client app and in the Server app.
+ * @author alter
  */
 public class ItemPanel extends JPanel {
 	
 	private static final long serialVersionUID = 1L;
 	
-	//Font used in the whole GUI
-	static Font font = new Font("Verdana Pro Cond Black", Font.BOLD, 32);
+	/**
+	 * Font used in the whole panel
+	 */
+	static private Font font = new Font("Verdana Pro Cond Black", Font.BOLD, 32);
 	
-	//instance variables
+	/**
+	 * Instance variables
+	 */
 	private ImageIcon icon;
 	private JLabel category, itemID, itemName, itemPrice;
 	
 
 	/**
-	 * Create the panel.
+	 * @param item - the item where the contents of the ItemPanel is based on.
 	 */
 	public ItemPanel(Item item) {
 		

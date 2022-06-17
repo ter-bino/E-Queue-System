@@ -7,10 +7,11 @@ import java.io.Serializable;
 import java.util.Scanner;
 
 /**
- * This abstract class will be inherited by Drink, Beverage and Dessert
+ * This abstract class will be inherited by Meal, Beverage and Dessert
  * This represents every item for sale in the Canteen as Items object
  * Could make one without the subclasses Drink, Beverage and Dessert but
  * 	they are in case I plan to add variations in the future (sizes, flavors, etc.)
+ * @author alter
  */
 public abstract class Item implements Serializable{
 	
@@ -23,7 +24,7 @@ public abstract class Item implements Serializable{
 	private String name;
 	private double price;
 	
-	/***
+	/**
 	 * Constructor
 	 * @param name		- name of the item
 	 * @param price		- price of the item
@@ -35,20 +36,36 @@ public abstract class Item implements Serializable{
 		this.itemID = itemID;
 	}
 	
-	//getters
+	/**
+	 * @return - id of this item
+	 */
 	public String getItemID() {
 		return this.itemID;
 	}
+	/**
+	 * @return - category of this item
+	 */
 	public String getCategory() {
 		return this.category;
 	}
+	/**
+	 * @return - name of this item
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * @return - price of this item
+	 */
 	public double getPrice() {
 		return this.price;
 	}
-	//setters
+	/**
+	 * Setter for the category of the item. Valid arguments are
+	 * "Meal", "Beverage", "Dessert". If the argument is none
+	 * of these 3, it will be set to a Meal.
+	 * @param category - category for this item
+	 */
 	public void setCategory(String category) {
 		//limit categories to "meal", "beverage" and "dessert". Default is "meal"
 		switch(category.toLowerCase()) {
@@ -65,21 +82,34 @@ public abstract class Item implements Serializable{
 			this.category = "Meal";
 		}
 	}
+	/**
+	 * @param name - name for this item
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
+	/**
+	 * @param price - price for this item
+	 */
 	public void setPrice(double price) {
 		this.price = price;
 	}
 	
-	//Returns info about the item in a sentence form
+	/**
+	 * Returns info about the item in a sentence form.
+	 */
 	public String toString() {
 		return this.name +  " - a " + this.category.toLowerCase() + " that costs P" + this.price;
 	}
 	
 	/**
-	 * static method for getting a String to set as ID of an Items object
+	 * This MUST called when instantiating a subclass of an Item.
+	 * Fetches the last Item ID used based on category to define
+	 * the item id to assign to the newly instantiated one.
 	 * NOTE: LIMIT THE ARGUMENTS PASSED TO VALUES "meal", "beverage" AND "dessert"
+	 * @param category - category of the item being instantiated
+	 * @return - itemID to assign to the newly instantiated item
+	 * @throws IOException
 	 */
 	protected static String setID(String category) throws IOException {
 		
